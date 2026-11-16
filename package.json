@@ -1,0 +1,15 @@
+{
+  "name": "@hnzxb/mac.cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "mac": "bin/mac.js"
+  },
+  "scripts": {
+    "check": "bun scripts/check.js",
+    "mac": "bun bin/mac.js"
+  },
+  "dependencies": {
+    "citty": "^0.2.2"
+  }
+}
