@@ -5,8 +5,8 @@ export const find = defineCommand({
   meta: { name: 'find', description: 'Spotlight (mdfind) 秒级文件检索' },
   args: {
     query: { type: 'positional', description: '搜索词', required: true },
-    type: { type: 'string', description: '文件类型，如 image/pdf/audio' },
-    live: { type: 'boolean', description: '只搜文件名（默认全文索引）' },
+    type: { type: 'string', description: '文件类型，如 markdown/pdf/image' },
+    live: { type: 'boolean', description: '按文件名词元匹配（默认全文索引，找 README 类文件用默认）' },
     limit: { type: 'string', description: '限制输出条数', default: '20' },
   },
   run: async ({ args }) => {
